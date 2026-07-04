@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { PageTransition } from "@/components/PageTransition";
-import finaleHeart from "@/assets/finale-heart.jpg.asset.json";
+import finaleHeart from "@/assets/new-heart.png.asset.json";
 import lanternAsset from "@/assets/lantern.png.asset.json";
 import { easing } from "@/lib/motion";
 
