@@ -79,16 +79,14 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Lock scroll globally — pages re-enable via .page-scrollable */
-    overflow: hidden;
-    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
 
-  /* Pages that need scrolling apply this to their outermost div */
   .page-scrollable {
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: contain;
     min-height: 100dvh;
     touch-action: pan-y;
   }

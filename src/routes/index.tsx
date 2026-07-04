@@ -37,7 +37,7 @@ function Landing() {
     <>
       <WelcomeAnimation onFinish={() => setWelcomeDone(true)} />
       <main
-        className="relative flex min-h-dvh items-center justify-center overflow-hidden px-6 py-16"
+        className="relative flex min-h-dvh items-center justify-center px-6 py-16"
         style={{
           background:
             "radial-gradient(ellipse at 25% 20%, #0f2a5c 0%, #0a1a36 35%, #060d1a 70%, #050a14 100%), radial-gradient(ellipse at 80% 85%, #0a2a1f 0%, transparent 55%)",
