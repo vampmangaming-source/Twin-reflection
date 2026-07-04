@@ -74,7 +74,7 @@ function MusicPage() {
         <FloatingStars count={7} />
         <HiddenHeart />
 
-        <section className="relative z-[20] mx-auto flex h-dvh max-w-3xl flex-col items-center justify-center px-6 py-8 sm:py-10">
+        <section className="relative z-[20] mx-auto flex min-h-dvh max-w-3xl flex-col items-center justify-center px-6 py-8 sm:py-10">
 
           {/* Header */}
           <motion.div

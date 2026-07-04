@@ -89,21 +89,16 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: contain;
-    height: 100dvh;
+    min-height: 100dvh;
     touch-action: pan-y;
   }
 
   html:has(.page-scrollable),
   body:has(.page-scrollable) {
-    overflow: visible;
+    overflow-x: hidden;
     overflow-y: auto;
     height: auto;
-    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-  }
-
-  html, body {
-    scroll-behavior: smooth;
   }
 
   ::selection {
