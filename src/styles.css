@@ -202,10 +202,10 @@
 
 @keyframes envelope-breathe {
   0%, 100% {
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.30)) drop-shadow(0 0 10px rgba(255,210,140,0.20));
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5)) drop-shadow(0 0 12px rgba(110,168,254,0.20));
   }
   50% {
-    filter: drop-shadow(0 3px 10px rgba(0,0,0,0.40)) drop-shadow(0 0 20px rgba(255,220,150,0.45));
+    filter: drop-shadow(0 3px 14px rgba(0,0,0,0.6)) drop-shadow(0 0 24px rgba(110,168,254,0.45));
   }
 }
 

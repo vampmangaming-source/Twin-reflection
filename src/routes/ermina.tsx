@@ -82,38 +82,8 @@ function ErminaPage() {
             transition={{ duration: 0.8, delay: 0.2, ease: easing }}
             className="font-body relative mt-8 text-xl italic text-white/70 sm:text-2xl"
           >
-            A heart full of kindness, a soul that blooms with love. Happy Birthday.
+            Kind-hearted, gentle, n a blessing to everyone around u.
           </motion.p>
-
-          {/* FIX: mt-4 → mt-6 for clear typographic separation between subtitle lines */}
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35, ease: easing }}
-            className="font-body relative mt-6 text-base italic text-white/45 sm:text-lg"
-          >
-            Kindness that blossoms wherever you go.
-          </motion.p>
-
-          {/* Scroll hint */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.4, ease: easing }}
-            aria-hidden
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          >
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="flex flex-col items-center gap-1.5 text-white/25"
-            >
-              <span className="text-xs tracking-widest uppercase" style={{ letterSpacing: "0.2em" }}>scroll</span>
-              <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                <path d="M1 1L8 8L15 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </motion.div>
-          </motion.div>
         </section>
 
         <section className="relative z-10 mx-auto max-w-5xl px-6">
@@ -139,7 +109,7 @@ function ErminaPage() {
             }}
           >
               <p className="font-body text-xl italic leading-relaxed text-white/85 sm:text-2xl">
-                A heart so gentle is a blessing to everyone who knows you.
+                May Allah keep u happy, protect u always, answer all ur duas, n bless every step of ur life with peace, love, happiness n endless joy.
               </p>
           </motion.div>
         </section>
@@ -148,7 +118,7 @@ function ErminaPage() {
           <WishWall
             who="ermina"
             accent="#1FA971"
-            placeholder="Write a wish and let your lantern brighten the forest..."
+            placeholder="Every wish becomes a lantern. What's urs?"
           />
         </div>
 

@@ -68,36 +68,6 @@ function SouhaylaPage() {
           >
             Strong, graceful, and truly one of a kind.
           </motion.p>
-
-          {/* FIX: mt-4 → mt-6 for clear typographic separation between subtitle lines */}
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.35, ease: easing }}
-            className="font-body relative mt-6 text-base italic text-white/45 sm:text-lg"
-          >
-            Grace in every step. Strength in every heart.
-          </motion.p>
-
-          {/* Scroll hint — fades in late, pulses gently, hidden once user scrolls */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.4, ease: easing }}
-            aria-hidden
-            className="absolute bottom-10 left-1/2 -translate-x-1/2"
-          >
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              className="flex flex-col items-center gap-1.5 text-white/25"
-            >
-              <span className="text-xs tracking-widest uppercase" style={{ letterSpacing: "0.2em" }}>scroll</span>
-              <svg width="16" height="10" viewBox="0 0 16 10" fill="none">
-                <path d="M1 1L8 8L15 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </motion.div>
-          </motion.div>
         </section>
 
         <section className="relative z-10 mx-auto max-w-5xl px-6">
@@ -132,7 +102,7 @@ function SouhaylaPage() {
           <WishWall
             who="souhayla"
             accent="#2962FF"
-            placeholder="Write a wish and let your lantern light the night..."
+            placeholder="Every wish becomes a lantern. What's urs?"
           />
         </div>
 

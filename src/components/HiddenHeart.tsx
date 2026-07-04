@@ -19,18 +19,18 @@ function EnvelopeSVG({
       aria-hidden
       style={{ overflow: "visible", display: "block" }}
     >
-      {/* ── Body: real white envelope ── */}
-      <rect x="1" y="10" width="62" height="37" rx="4" fill="#f5f0e8" />
+      {/* ── Body: glass-style dark envelope matching site aesthetic ── */}
+      <rect x="1" y="10" width="62" height="37" rx="5" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.25)" strokeWidth="1.2" />
 
-      {/* ── Side panels (inner folds) ── */}
-      <path d="M1 47 L32 29 L1 10" fill="#e8e0d0" />
-      <path d="M63 47 L32 29 L63 10" fill="#e8e0d0" />
+      {/* ── Inner fold lines (side panels) ── */}
+      <path d="M1 47 L32 29 L1 10" fill="rgba(255,255,255,0.04)" />
+      <path d="M63 47 L32 29 L63 10" fill="rgba(255,255,255,0.04)" />
 
-      {/* ── Bottom fold seam ── */}
-      <path d="M1 47 L32 29 L63 47" fill="#ddd4c0" />
+      {/* ── Bottom seam ── */}
+      <path d="M1 47 L32 29 L63 47" fill="rgba(255,255,255,0.06)" />
 
-      {/* ── Outer border ── */}
-      <rect x="1" y="10" width="62" height="37" rx="4" fill="none" stroke="#c8bfa8" strokeWidth="0.8" />
+      {/* ── Top shimmer line ── */}
+      <line x1="1" y1="11" x2="63" y2="11" stroke="rgba(255,255,255,0.12)" strokeWidth="0.8" />
 
       {/* ── Letter slides out on open ── */}
       <motion.g
@@ -45,10 +45,10 @@ function EnvelopeSVG({
             : { y: 0, opacity: 0 }
         }
       >
-        <rect x="18" y="6" width="28" height="22" rx="2.5" fill="#fffdf5" stroke="#d4c89a" strokeWidth="0.7" />
-        <line x1="22" y1="13" x2="42" y2="13" stroke="#c4ae78" strokeWidth="0.9" strokeLinecap="round" />
-        <line x1="22" y1="17" x2="42" y2="17" stroke="#c4ae78" strokeWidth="0.9" strokeLinecap="round" />
-        <line x1="22" y1="21" x2="34" y2="21" stroke="#c4ae78" strokeWidth="0.9" strokeLinecap="round" />
+        <rect x="18" y="6" width="28" height="22" rx="2.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.30)" strokeWidth="0.7" />
+        <line x1="22" y1="13" x2="42" y2="13" stroke="rgba(255,255,255,0.45)" strokeWidth="0.9" strokeLinecap="round" />
+        <line x1="22" y1="17" x2="42" y2="17" stroke="rgba(255,255,255,0.45)" strokeWidth="0.9" strokeLinecap="round" />
+        <line x1="22" y1="21" x2="34" y2="21" stroke="rgba(255,255,255,0.45)" strokeWidth="0.9" strokeLinecap="round" />
         {/* tiny heart on letter */}
         <path
           d="M37 11.5 C37 10.6 37.6 10 38.4 10 C39.2 10 39.8 10.7 39.8 11.4 C39.8 12.9 38.2 14 38.2 14 C38.2 14 36.6 12.9 36.6 11.4 C36.6 10.7 37 10 37.7 10 Z"
@@ -56,11 +56,11 @@ function EnvelopeSVG({
         />
       </motion.g>
 
-      {/* ── Flap — sealed position is the V-shape pointing down ── */}
+      {/* ── Flap — sealed V-shape pointing down ── */}
       <motion.path
         d="M1 10 L32 30 L63 10 Z"
-        fill="#ede5d4"
-        stroke="#c8bfa8"
+        fill="rgba(255,255,255,0.10)"
+        stroke="rgba(255,255,255,0.25)"
         strokeWidth="0.8"
         style={{ transformOrigin: "32px 10px", transformBox: "fill-box" }}
         initial={{ rotateX: 0 }}

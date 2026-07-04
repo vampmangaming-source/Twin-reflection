@@ -112,16 +112,6 @@ function MusicPage() {
               <span>A Melody Made Just for Both of You</span>
             </h1>
 
-            {/* Subtitle */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5, ease: easing }}
-              className="font-body max-w-lg text-sm italic leading-relaxed text-white/50 sm:text-base"
-            >
-              Press play, let the music fill the moment — this one's yours.
-            </motion.p>
-
             {/* Decorative divider */}
             <motion.div
               initial={{ scaleX: 0, opacity: 0 }}
@@ -191,15 +181,6 @@ function MusicPage() {
               <span className="relative text-white">Continue to the finale</span>
               <span className="relative text-white/60 transition-transform group-hover:translate-x-0.5" aria-hidden>→</span>
             </Link>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.6, ease: easing }}
-              className="text-xs italic text-white/25"
-            >
-              One last surprise awaits
-            </motion.p>
           </motion.div>
         </section>
       </div>
