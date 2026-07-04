@@ -1,0 +1,34 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "eslint.config.js"],
+  "compilerOptions": {
+    "target": "ES2022",
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": false,
+    "noEmit": true,
+    /* Allow falling back to package.json "main"/"types" when a package's
+       exports map doesn't include a types condition — fixes framer-motion
+       and lucide-react type resolution under moduleResolution:Bundler    */
+    "resolvePackageJsonImports": false,
+
+    /* Linting */
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    /* noUncheckedSideEffectImports was added in TS 5.6. If the VS Code
+       language server uses an older bundled TS it will report TS5023.
+       Moved here as a comment — re-enable once TS ≥5.6 is confirmed
+       in the editor:  "noUncheckedSideEffectImports": true            */
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
