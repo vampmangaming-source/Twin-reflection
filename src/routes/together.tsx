@@ -23,7 +23,7 @@ function TogetherPage() {
   return (
     <PageTransition>
       <div
-        className="relative min-h-dvh overflow-hidden"
+        className="page-scrollable relative min-h-dvh"
         style={{
           background:
             "linear-gradient(135deg, #08111F 0%, #0a1a2e 35%, #08201c 65%, #07160F 100%)",

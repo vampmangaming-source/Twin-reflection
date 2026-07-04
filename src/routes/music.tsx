@@ -51,7 +51,7 @@ function MusicPage() {
   return (
     <PageTransition>
       <div
-        className="page-locked relative overflow-hidden"
+        className="page-scrollable relative min-h-dvh"
         style={{
           background: [
             "radial-gradient(ellipse at 20% 15%, #12234a 0%, #0a1530 42%, #060d1a 78%, #050a14 100%)",

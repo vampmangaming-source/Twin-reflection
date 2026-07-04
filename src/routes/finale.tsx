@@ -152,7 +152,7 @@ function FinalePage() {
   return (
     <PageTransition>
       <div
-        className="relative min-h-dvh overflow-hidden"
+        className="page-scrollable relative min-h-dvh"
         style={{
           background:
             "radial-gradient(ellipse at center, #0a1a36 0%, #060d1a 60%, #050a14 100%)",
