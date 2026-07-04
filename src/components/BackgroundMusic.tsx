@@ -36,7 +36,8 @@ export function BackgroundMusic() {
         audio.volume = start + (target - start) * t;
         if (t >= 1) {
           clearFade();
-          if (target === 0) audio.pause();
+          // Do NOT pause when reaching 0 — keep playing silently so
+          // fadeIn never needs to call play() again (avoids autoplay block)
         }
       }, 30);
     };
@@ -57,7 +58,10 @@ export function BackgroundMusic() {
     const fadeOut = () => fadeTo(0, 900);
     const fadeIn = () => {
       if (!startedRef.current) return;
-      if (audio.paused) audio.play().catch(() => {});
+      // Resume play if somehow paused, then fade back in
+      if (audio.paused) {
+        audio.play().catch(() => {});
+      }
       fadeTo(TARGET_VOLUME, 1200);
     };
 
